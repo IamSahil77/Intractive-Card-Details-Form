@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+
+<body>
+
+  <!-- container starts -->
+  <div class="container">
+
+    <!-- left section start -->
+    <div class="left">
+      <div class="fcard">
+        <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="18.478" cy="18.5" rx="18.478" ry="18.5" fill="#fff"/><path d="M73.5 20.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+        <h1 id="shownum"><pre>0000 0000 0000 0000</pre></h1>
+        <p id="left">MOHD SAHIL</p>
+        <p id="right">00/00</p>
+
+      </div>
+      <div class="bcard">
+        <p id="showcvc">000</p>
+      </div>
+    </div>
+    <!-- left section ends -->
+
+
+    <!-- right section start -->
+    <div class="right">
+      <form action="#">
+        <label>CARDHOLDER NAME</label>
+        <input type="name" class="name" id="cname" placeholder="e.g Mohd Sahil" required><br><br>
+        <label>CARD NUMBER</label>
+        <input type="text" class="number" id="cnum" placeholder="e.g 0000 0000 0000 0000" required><br><br>
+        <label>EXP. DATA (MM/YY)</label>
+        <label class="cvc2">CVC</label>
+        <input type="number" class="date" id="cmm" placeholder="MM" required>
+        <input type="number" class="date" id="cyy" placeholder="YY" required>
+        <input type="number" class="cvc" id="cvc" placeholder="123" required>
+
+        <button onclick="btn()">Confirm</button>
+        
+      </form>
+    </div>
+    <!-- right section ends -->
+
+  </div>
+  <!-- container ends -->
+
+  <!--
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
